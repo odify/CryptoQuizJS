@@ -17,7 +17,7 @@ main{
 header{
     margin: 0 auto;
     text-align: center;
-    border: 5px inset #3dd7ac;
+    border: 2px inset #fff;
     background-color: #232b30;
 }
 .headline{
@@ -112,20 +112,18 @@ button {
   color: #000;
   text-shadow: 0.9px 0.78px 0.7px #3dd7ac;
   width: 80vw;
-  text-align: justify;
+  text-align: left;
   min-height: 20vh;
   border: 2.9px outset #212529;
-  letter-spacing: 0.79px;
   background-color: #fff;
 }
 .indication {
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease;
   position: absolute;
-  top: 7;
   left: 0;
-  height: 29px;
+  height: 2.4vh;
   background: #fa3b3b;
-  border: 3.24px outset #fff;
+  border: 2.43px outset #fff;
 }
 .notify-correct {
   position: absolute;
@@ -183,7 +181,7 @@ h1 {
 .menu p {
   margin: 20px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 760px) {
   .answers-holder, .submit {
       transition: all 0.2s ease-out;
     width: 300px;
@@ -195,5 +193,18 @@ h1 {
   .qtext {
       transition: all 0.2s ease-out;
       margin: 50px;
+  }
+  .inner{
+    font-size: 1em;
+  }
+  .qtext {
+    font-size: 0.9em;
+    color: #000;
+    text-shadow: 0.9px 0.78px 0.7px #3dd7ac;
+    width: 80vw;
+    text-align: left;
+    min-height: 20vh;
+    border: 2.9px outset #212529;
+    background-color: #fff;
   }
 }
