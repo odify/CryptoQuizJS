@@ -279,7 +279,25 @@ const startGame = () => {
             {text: 'Symmetric key', correct: false},
             {text: 'Secure key', correct: false}
         ]
-     }
+    },    
+    {
+        question:'What is NOT an essential element of security, if you just want to adding public-key encryption to digital signature schema ?',
+        answers:[
+            {text: 'Privacy', correct: false},
+            {text: 'Authentication', correct: false},
+            {text: 'Integrity', correct: false},
+            {text: 'Pro-repudiation', correct: true}
+        ]
+    },
+    {
+        question:'There are four typical classes of certificate - but which one is none ?',
+        answers:[
+            {text: 'Class 0 − They may be used by Donald Trump or those who trust in.', correct: true},
+            {text: 'Class 1 − These certificates can be easily acquired by supplying an email address', correct: false},
+            {text: 'Class 2 − These certificates require additional personal information to be supplied', correct: false},
+            {text: 'Class 3 − These certificates can only be purchased after checks have been made about the requestor’s identity', correct: false}
+        ]
+    }
     ]
 
 
@@ -288,7 +306,7 @@ const startGame = () => {
     let questionNumber = 0;
     
     const showQuestion = () => {
-        if (questionNumber >= 18){
+        if (questionNumber >= 20){
             clearInterval(qtimer);
             submit.style.pointerEvents = 'none';
             submit.style.background = '#191919';
@@ -296,7 +314,7 @@ const startGame = () => {
             Swal.fire({
               icon: 'success',
               title: "Quiz Completed!",
-              text: `You scored ${correct} of 18 questions\n xX 10 to 15 is epic\n Or 15 or more is Genius xX`,
+              text: `You scored ${correct} of 20 questions\n  10 to 15 is epic\n  15 or more is Genius `,
               showCancelButton: false,
               showConfirmButton: false
             })
@@ -309,7 +327,7 @@ const startGame = () => {
             */
             // restatring causes some weird problems  
         } else {
-        qtimer = setInterval(countdown, 777);
+        qtimer = setInterval(countdown, 500);
         breadth = 100;
         countdown();
         answers_holder.innerHTML = null;
@@ -344,3 +362,24 @@ const startGame = () => {
 }
     showQuestion();
 }
+
+
+
+// ,
+//      {
+//          question:'What is NOT an essential element of security, if you just want to adding public-key encryption to digital signature schema ?',
+//          answers:[
+//              {text: 'Privacy', correct: false},
+//              {text: 'Authentication', correct: false},
+//              {text: 'Integrity', correct: false},
+//              {text: 'Pro-repudiation', correct: true}
+//          ]
+//       },
+//       {
+//           question:'There are four typical classes of certificate - but which one is none ?',
+//           answers:[
+//               {text: 'Class 0 − They may be used by Donald Trump or those who trust in.', correct: true},
+//               {text: 'Class 1 − These certificates can be easily acquired by supplying an email address', correct: false},
+//               {text: 'Class 2 − These certificates require additional personal information to be supplied', correct: false},
+//               {text: 'Class 3 − These certificates can only be purchased after checks have been made about the requestor’s identity', correct: false}
+//           ]

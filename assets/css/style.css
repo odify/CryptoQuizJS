@@ -1,8 +1,8 @@
 body{
     font-family: Fira Sans, serif;
-    font-weight: 800;
-    background-image: url(https://sectigostore.com/blog/wp-content/uploads/2020/04/types-of-encryption-feature.jpg);
-    background-size: cover;
+    font-weight: 600;
+    background-image: url( ../img/1.jpg);
+    background-repeat: round;
     color: #fff;
 }
 * {
@@ -21,15 +21,12 @@ header{
     background-color: #232b30;
 }
 .headline{
-    font-size: 1.67em;
+    font-size: 1.57em;
     color: #fff;
     letter-spacing: 0.87px;
     text-transform: uppercase;
     text-shadow: 1px 0.7px 0.8px #3dd7ac;
 }
-/* section{
-  width: 90%;
-} */
 .outer {
   display: none;
   height: 60vh;
@@ -37,22 +34,22 @@ header{
   justify-content: space-between;
 }
 .inner{
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 .answers-holder {
   width: 50vw;
 }
 .answer {
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
   width: 80vw;
   background: #333b40;
   color: #ffffff;
   border: none;
   padding: 2.4%;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 .answer:hover {
-  transition: all 0.2s ease-out;
+  transition: all 0.18s ease-out;
   background: #fff;
   color: #000;
   text-shadow: 1px 0.7px 0.8px #3dd7ac;
@@ -84,10 +81,9 @@ header{
   padding: 15px;
   border: none;
   text-transform: uppercase;
-  font-weight: 600;
   width: 100%;
   border: 2.24px outset #212529;
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 .submit-wrap {
   width: 100%;
@@ -108,12 +104,12 @@ button {
   cursor: pointer;
 }
 .qtext {
-  font-size: 1.69em;
+  font-size: 1.8em;
   color: #000;
   text-shadow: 0.9px 0.78px 0.7px #3dd7ac;
   width: 80vw;
   text-align: left;
-  min-height: 20vh;
+  min-height: 22.5vh;
   border: 2.9px outset #212529;
   background-color: #fff;
 }
@@ -121,7 +117,7 @@ button {
   transition: all 0.3s ease;
   position: absolute;
   left: 0;
-  height: 2.4vh;
+  height: 2.3vh;
   background: #fa3b3b;
   border: 2.43px outset #fff;
 }
@@ -163,15 +159,15 @@ button {
   border: none;
   color: white;
   background: #3dd7ac;
-  font-size: 1.04em;
+  font-size: 1.07em;
 }
 .start:hover {
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease-in;
   background: #6ca332;
   color: #efefef;
 }
 .start:active {
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease;
   background: #5c8322;
   color: #dfdfdf;
 }
@@ -184,27 +180,49 @@ h1 {
 @media only screen and (min-width: 760px) {
   .answers-holder, .submit {
       transition: all 0.2s ease-out;
-    width: 300px;
+      width: 300px;
   }
   .submit-wrap {
       width: 100%;
       text-align: center; 
   }
-  .qtext {
-      transition: all 0.2s ease-out;
-      margin: 50px;
-  }
   .inner{
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .qtext {
-    font-size: 0.9em;
+    transition: all 0.2s ease-out;
+    margin: 30.5px;
+    font-size: 1.4em;
+    border-radius: 1.1%;
     color: #000;
-    text-shadow: 0.9px 0.78px 0.7px #3dd7ac;
+    text-shadow: 0.9px 1.78px 0.98px #3dd7ac;
     width: 80vw;
     text-align: left;
-    min-height: 20vh;
-    border: 2.9px outset #212529;
+    min-height: fit-content;
+    border: 1.9px outset #212529;
     background-color: #fff;
   }
+}
+@media only screen and (max-width: 560px) {
+  .inner{
+    font-size: 0.99em;
+    border-radius: 1.43%;
+  }
+  .qtext {
+    transition: all 0.3s ease-out;
+    margin: 21px;
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 1.1px 1.98px 1.3px #212529;
+    width:fit-content;
+    min-height: fit-content;
+    border: 1.69px outset #212529;
+    border-radius: 1.23%;
+    background-color: #3dd7ac;
+  }
+  body{ 
+    background-color: #000;
+    height: 100%;
+  }
+
 }
